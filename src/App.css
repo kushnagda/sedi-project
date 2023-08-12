@@ -1,38 +1,787 @@
-.App {
+body{
+  margin:0;
+  padding:0;
+}
+
+.carousel-item-next, 
+.carousel-item-prev,
+.carousel-item.active{
+  display: flex !important;
+}
+
+.text-dark{
+  color:#4e4e4e;
+}
+
+.navbar{
+  background: none;
+    z-index: 3;
+}
+
+.navbar-brand{
+  width:31%;
+}
+
+.navbar-brand img{
+ width: 58%;
+}
+
+.banner-parent{
+  /* position: absolute; */
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav-item .nav-link{
+  color:#fff;
+  letter-spacing: 2px;
+    padding-right: 32px !important;
+}
+
+.bg-blue{
+  background: #2f4c9f;
+}
+
+.banner-height{
+  height: 37rem;
+}
+
+.w-60{
+  width: 60%;
+}
+
+.w-40{
+  width: 40%;
+}
+
+.banner-parent .sedi-banner{
+  position: absolute;
+    width: 57%;
+    top: 23%;
+    left: 32%;
+    z-index: 2;
+}
+
+.banner-text{
+  position: absolute;
+  top: 29%;
+  left: 3%;
+}
+
+.banner-text p{
+  color: #2f4c9f;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 22px;
+
+}
+
+.tagline{
+  text-align: center;
+  margin-top: 35px;
+  font-size: 20px;
+  display: flex;
+    justify-content: center;
+}
+
+.tagline p{
+  margin-top:13px;
+}
+
+.fa-quote-left,
+.fa-quote-right{
+  color:#2f4c9f;
+}
+
+.btn-blue{
+  border-radius: 0px !important;
+    background: #fff !important;
+    color: #2f4c9f !important;
+    border: 3px solid #2f4c9f !important;
+    font-weight: 500 !important;
+    padding: 10px 38px !important;
+    
+}
+
+.btn-blue:hover{
+  color: #fff !important;
+  background: #2f4c9f !important;
+  transition: 0.5s;
+}
+
+.btn-blue:not(:hover){
+  background: #fff !important;
+  color: #2f4c9f !important;
+  transition: 0.5s;
+}
+
+.btn-read{
+  margin-top:35px;
+}
+.left-bgbanner,
+.right-bgbanner{
+  position: absolute;
+  width: 50%;
+  top:0px;
+  right:0;
+}
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fcfcfc;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #fcfcfc;
+  color: rgb(39, 37, 37);
+  transform: rotateY(180deg);
+}
+
+.story-img,
+.concept-img{
+  width: 40%;
+  margin-top:50px;
+}
+.technology-img{
+  width:50%;
+  margin-top:26px;
+}
+.card-text{
+  font-size: 25px;
+    margin-top: 24px;
+}
+
+.back-card-title{
+  font-size: 30px;
+    margin-top: 18px;
+    text-decoration: none; 
+       position: relative; 
+}
+
+.back-card-title::after{
+  position: absolute;
+        content: '';
+        height: 4px;
+        bottom: -4px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 39%;
+		  background: #2f4c9f;
+}
+
+.meet-sedi,
+.offgrid-text,
+.tech-text,
+.globalpresence-text,
+.globalpresence-text2,
+.pv-text{
+  position: relative;
+}
+
+.pv-text{
+  margin: 30px 0px ;
+}
+
+.tech-text{
+  margin:30px 0px;
+}
+
+.globalpresence-text{
+  font-size: 2rem;
+    margin-top: 79px;
+    
+    font-weight: 500;
+}
+.globalpresence-text2{
+  font-size: 2rem;
+    margin-top: 110px;
+    
+    font-weight: 500;
+}
+
+.meet-sedi::after{
+  position: absolute;
+        content: '';
+        height: 5px;
+        bottom: -10px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 9%;
+		  background: #2f4c9f;
+}
+.pv-text::after{
+  position: absolute;
+        content: '';
+        height: 5px;
+        bottom: -10px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 29%;
+		  background: #2f4c9f;
+}
+.offgrid-text::after{
+  position: absolute;
+        content: '';
+        height: 5px;
+        bottom: -10px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 45%;
+		  background: #2f4c9f;
+}
+.solar-title::after{
+  position: absolute;
+        content: '';
+        height: 5px;
+        bottom: -10px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 55%;
+		  background: #2f4c9f;
+}
+.globalpresence-text::after,
+.globalpresence-text2::after{
+  position: absolute;
+        content: '';
+        height: 5px;
+        bottom: -10px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 20%;
+		  background: #2f4c9f;
+}
+.tech-text::after{
+  position: absolute;
+        content: '';
+        height: 5px;
+        bottom: -10px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 20%;
+		  background: #2f4c9f;
+}
+
+.solar-text{
+  margin-top:62px;
+}
+
+.back-card-text{
+  text-align: left;
+    padding: 0 17px;
+    margin-top: 19px;
+    font-size: 12px;
+}
+.solar-title{
+  font-size: 2.5rem;
+}
+
+.info-top{
+  margin-top: 100px;
+}
+.solar-text{
+  padding-left: 20px;
+
+}
+
+.poly-transition{
+  clip-path: polygon(24% 0%, 100% 0%, 100% 100%, 2% 100%);
+}
+.poly-transition2{
+  clip-path: polygon(0% 0%, 98% 0%, 81% 100%, 0% 100%);
+}
+
+.app-rows img{
+  width: -webkit-fill-available;
+  height:380px;
+  
+}
+.app-rows{
+ position: relative;
+  padding:0 !important;
+}
+
+
+
+.overlay-text{
+  position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #00000094;
+    color: #fff;
+    height:80px;
+    transition: .5s ease;
+    overflow: hidden;
+    
+}
+
+.overlay-title{
+  text-align: center;
+  font-size: 23px;
+}
+.uparrow{
+  font-size: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay-text:hover{
+  
+  height:100%;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.uparrow{
+  animation: zoom-in-zoom-out 1s ease infinite;
+  margin-bottom: 0px;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-font{
+  font-size: 2rem;
+  margin-top: 79px;
+  margin-bottom: 71px;
+  font-weight: 500;
+}
+
+.footer-bg{
+  background-color: #edf0f3;
+}
+.cpr-order{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  order:inherit;
+}
+.solutions-text{
+  font-weight: bold;
+  margin-right: 10px;
+}
+.bg-tech{
+  background-image: url(../public/assets/technology2.png);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 24%;
+    height: 29rem;
+    border-top: 1px solid #e6dcdc;
+    padding-top: 20px;
+}
+.banner-text-tech{
+  margin-top: 23px;
+    color: #3b3d3e;
+    font-size: 15px;
+}
+
+.headerlight ul li a{
+  color: #2f4c9f !important;
+}
+.tech-bg-grey{
+  background: #f3f3f3;
+}
+.tech-par{
+  margin: 40px 0px;
+  color: #656768;
+  font-weight: 600;
+}
+
+.features-shadow{
+  box-shadow: 3px 3px 3px #c4bebe91;
+    /* border: 1px solid #c4bebe91; */
+    transition: 0.5s;
+    padding: 10px;
+    height: 9rem;
+    background: #fefefe;
+}
+.features-shadow h4{
+  font-size: 20px;
+}
+.features-shadow:hover {
+box-shadow:  1px 1px 3px #c4bebe91;
+/* border:none; */
+}
+
+.bg-light-grey{
+  background-color: #f6f6f6;
+}
+
+.sub-heading{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sub-text{
+  font-size: 14px;
+  color: #6b6b6c;
+}
+
+.banner-border{
+  border-top: 1px solid #e6dcdc;
+}
+.solarimg{
+  width:68%;
+}
+
+.poleimg{
+  width: 47%;
+}
+.shadowprod{
+  box-shadow: 0px 0px 10px #d6d6d6;
+}
+
+.svg-icon{
+  width: 17%;
+}
+
+.banner-border{
+  border-top: 1px solid #e6dcdc;
+}
+
+#carouselExample,
+#carouselExample2,
+#carouselExample3,
+#carouselExample6{
+  height:23rem;
+}
+
+#carouselExample8{
+  height:15rem;
+}
+
+#carouselExample9{
+height: 24rem;
+}
+#carouselExample12{
+  height: 24rem;
+  }
+  #carouselExample13{
+    height: 20rem;
+    }
+
+#carouselExample10{
+  height: 23rem;
+  }
+  #carouselExample15{
+    height: 33rem;
+    }
+
+
+.tele-img1{
+  width: 25%;
+}
+
+.show, .collapsing {
+  background: rgb(0 0 0 / 47%);
+}
+
+.cont-img{
+  width:50%;
+}
+.carousel-indicators [data-bs-target]{
+  background-color: #322f2f !important;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item{
+height: 26rem;
+}
+
+.trade1{
+  width:50%;
+}
+.trade2{
+  width:72%;
+}
+.trade3{
+  width:56%;
+}
+.trade4{
+  width:50%;
+}
+.cards-align{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (min-width:991px){
+#meet,
+#sediaward,
+#sediaward2,
+#apps,
+#apps2,
+#global,
+#global2,
+#contact,
+#global3{
+  display: none;
+}
+}
+@media only screen and (max-width: 1920px){
+  .banner-parent .sedi-banner {
+  top:11%;
+  
+  }
+  .right-bgbanner{
+    height:51rem;
+  }
+  .footer-info-align{
+    text-align: left;
+  }
+  .meetsedibanner{
+    margin-top: 105px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1700px){
+  .banner-parent .sedi-banner {
+  
+  width:53%;
+  top:24%;
   }
-  to {
-    transform: rotate(360deg);
+  .right-bgbanner{
+    height:44rem;
   }
+  #carouselExample15{
+    height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+  .right-bgbanner {
+    height: 39rem;
+}
+.meetsedibanner{
+  margin-top: 50px;
+}
+
+#carouselExample15{
+  height: 27rem;
+  }
+
+.banner-text {
+ 
+  top: 31%;
+}
+}
+
+@media only screen and (max-width: 990px){
+  #carouselExample,
+#carouselExample2,
+#carouselExample3,
+#carouselExample6{
+  height:88rem !important;
+}
+.meetsedibanner{
+  margin-top: 20px;
+}
+#carouselExample15{
+  height: 60rem;
+  }
+.flip-card{
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-info-align{
+  text-align: center;
+}
+.back-card-text {
+  padding: 0 8px !important;
+  margin-top: 0px !important;
+  font-size: 10px !important;
+}
+.slider-img-mobile{
+  width: 65% !important;
+}
+  .poly-transition{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    order:1;
+  }
+  .cpr-order{
+    order:2;
+  }
+  .mobile-order{
+    order:2;
+  }
+  .poly-transition2{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .app-rows{
+    margin-top: 10px !important;
+  }
+  .bg-tech{
+    background-size: contain;
+      height: 23rem;
+    background-position: 0% 71%;
+  }
+  .features-shadow{
+    padding: 3px 0px;
+    height: 11rem;
+  }
+  .features-shadow h4{
+    font-size: 15px;
+  }
+  .features-shadow p{
+    font-size: 12px; 
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .banner-parent .sedi-banner {
+  left:38%;
+  }
+  .flip-card{
+    width:250px;
+    height:250px;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #carouselExample8{
+    height:20rem;
+  }
+  #carouselExample9{
+    height:24rem;
+  }
+  #carouselExample12{
+    height:24rem;
+  }
+  #carouselExample13{
+    height: 17rem;
+    }
+  .tele-img1{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width:838px){
+  #carouselExample,
+#carouselExample2,
+#carouselExample3,
+#carouselExample6{
+  height:76rem !important;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+  #carouselExample,
+#carouselExample2,
+#carouselExample3,
+#carouselExample6{
+  height:56rem !important;
+}
+#carouselExample15{
+  height: 40rem;
+  }
+
+  .banner-parent .sedi-banner {
+    position: absolute;
+    width: 91%;
+    top: 13%;
+    left: 4%;
+    margin-top:18px;
+}
+.banner-text {
+  position: absolute;
+  top: 45%;
+  left: 4%;
+}
+.navbar-brand{
+  width:58%;
+}
+.navbar-brand img{
+  width: 80%;
+}
+.banner-text p{
+  margin-bottom: 0px;
+}
+.left-bgbanner{
+  width: 60%;
+}
+.right-bgbanner{
+  width: 40%;
+}
+.banner-height,
+.right-bgbanner {
+  height: 46rem;
+}
+}
+
+
+@media only screen and (max-width: 500px){
+  #carouselExample,
+#carouselExample2,
+#carouselExample3{
+  height:20rem !important;
+}
+
+
+#carouselExample6{
+  height:36rem !important;
+}
+
+  .banner-text {
+    top: 50%;
+  }
+
+  
+}
+@media only screen and (max-width: 400px){
+  #carouselExample,
+#carouselExample2,
+#carouselExample3,
+#carouselExample6{
+  height:43rem !important;
+}
+
+  .right-bgbanner,
+  .banner-height {
+    height:41rem;
+  }
+  
+  
 }
