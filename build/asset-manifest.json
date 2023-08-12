@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e41c28d1.css",
+    "main.js": "/static/js/main.e8c5ccf1.js",
+    "static/js/787.d32282f5.chunk.js": "/static/js/787.d32282f5.chunk.js",
+    "static/media/technology2.png": "/static/media/technology2.286f0faf74f070334e06.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.e41c28d1.css.map": "/static/css/main.e41c28d1.css.map",
+    "main.e8c5ccf1.js.map": "/static/js/main.e8c5ccf1.js.map",
+    "787.d32282f5.chunk.js.map": "/static/js/787.d32282f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e41c28d1.css",
+    "static/js/main.e8c5ccf1.js"
+  ]
+}
